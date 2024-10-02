@@ -1,0 +1,52 @@
+#workTitle {
+    font-size: 8em;
+}
+
+#Timeframe {
+    font-size: 3em;
+}
+
+.ProjectPage {
+    display: flex;
+    width: 70vw;
+    height: 100vw;
+    flex-direction: column;
+    row-gap: 4em;
+    margin: auto;
+}
+
+.PageHeading {
+    display: flex;
+    align-items: center;
+}
+
+.ProjectDescription {
+    font-size: 1.5em;
+}
+
+.ProjectBreakdown {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 2em;
+    row-gap: 2em;
+    width: 100%;
+    height: fit-content;
+}
+
+.Project1,
+.Project2,
+.Project3 {
+    height: 50%;
+    width: 45%;
+    border-radius: 1em;
+    border: black solid 5px;
+}
+
+#ProjectEnhanced {
+    position: relative;
+    align-self: center;
+    width: 60vw;
+    height: 50vw;
+    background-color: white;
+}

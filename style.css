@@ -1,41 +1,44 @@
-*{
-    font-family:"Crimson Text", serif;
-    margin:0;
-    padding:0;
+* {
+    font-family: "Crimson Text", serif;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-image: url("crinkled_paper.jpg")
+body {
+    background-image: url("crinkled_paper.jpg");
 }
 
 #NavBar {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    height:5vh;
-    justify-content: space-between;
-    padding-bottom:1em;
+    height: 5vh;
+    justify-content: center;
+    padding-bottom: 1em;
     margin-left: 1em;
-    margin-right:1em;
+    margin-right: 1em;
 }
 
-#NameSlug, #Title, #Portfolio{
+
+#NameSlug,
+#Title,
+#Portfolio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin:0;
-    padding:0;
-    font-size:1.5em;
-    width:fit-content
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    width: fit-content
 }
 
-#Title{
-    font-size:2em;
-    align-self:center;
+#Title {
+    font-size: 2em;
+    align-self: center;
 }
 
-a{
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 #backgroundLoop {
@@ -48,70 +51,160 @@ a{
     top: 0;
     bottom: 0;
     z-index: -1;
- }
+}
 
- .Homepage{
-    display:grid;
-    width:70vw;
-    height:100vw;
-    column-gap: 1rem;
-    margin:auto;
- }
+.Homepage {
+    display: flex;
+    width: 70vw;
+    height: 100vw;
+    flex-direction: column;
+    row-gap: 8em;
+    margin: auto;
+}
 
- .HomepageSection{
-    display:flex;
-    justify-content:space-around;
-    padding:1em;
-    height:fit-content;
+.HomepageSection {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    height: fit-content;
     column-gap: 1em;
     border-radius: 1em;
- }
-
- #About, #Education{
-    background:rgb(233, 201, 168);
- }
-
-#Intro{
-    background:rgb(233, 229, 225);
 }
 
-#name{
+#supplementary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 8em;
+}
+
+#About,
+#Education,
+#AddCoursework {
+    background: rgb(233, 201, 168);
+    display: flex;
+    row-gap: 1em;
+    justify-content: space-between;
+    row-gap: 1em;
+    border: px solid rgb(231, 190, 149);
+}
+
+#Intro {
+    background: rgb(233, 229, 225);
+}
+
+#name {
     font-size: 8em;
 }
-#intent{
+
+#intent {
     font-size: 2.5em;
-    color:rgb(72, 145, 121);
+    color: #489179;
 }
 
-#welcome{
+#welcome {
     font-size: 2.5em;
 }
 
 
-#Intro-LC , #Intro-RC{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    row-gap:1em;
+#Intro-LC,
+#Intro-RC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1em;
+    width: 50%;
 }
 
-#Intro-LC p{
+#Intro-LC p {
+    font-size: 1.5em;
+}
+
+#profilePhoto {
+    border-radius: 1em;
+
+}
+
+.LC {
+    font-size: 2.5em;
+    width: 30%;
+    align-self: center;
+    margin: auto;
+}
+
+.RC {
+    width: 70%;
     font-size: 1.5em;
 }
 
 
-#Intro-RC{
-    width: 50%;
+
+/* Style for the open button */
+#openNavBtn {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    font-size: 20px;
+    color: black;
+    border: none;
+    padding: none;
+    background: none;
+    font-size: 1.5em;
 }
 
-#profilePhoto{
-    border-radius: 1em;
-    height:100%;
-    width:auto;
+/* Side navigation styles */
+.sidenav {
+    height: 100%;
+    /* Full-height */
+    width: 0;
+    /* Initially set width to 0 */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    right: 0;
+    /* Align to the right side of the screen */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* Smooth transition */
+    padding-top: 60px;
+    /* Padding at the top */
+    z-index: 1;
+    /* Ensure the sidebar is on top */
+    background-color: #4242423e;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+/* Navigation links style */
+.sidenav a {
+    padding: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.sidenav a:hover,
+#openNavBtn:hover {
+    color: #ffffff;
+    /* Hover effect */
+    transition: 0.3s;
+}
+
+/* Close button at the top */
+.sidenav .closebtn {
+    position: absolute;
+    top: .5em;
+    left: 0em;
+    font-size: 36px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Divider (separator) styles */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #555;
+    margin: 10px 20px;
+}

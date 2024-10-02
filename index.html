@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Massimo Viviano Portfolio site</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer ></script>
+
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav id="NavBar">
-            <p id="NameSlug">Massimo Viviano</p>
-            <p id="Title"><i>Portfolio 2024</i></p>
-            <p id="Portfolio"><a href="">Work</a></p>
+        <p id="Title"><i>Portfolio 2024</i></p>
+        <button id="openNavBtn">View work</button>
     </nav>
-    <main class = "Homepage">
+
+    <!-- Side Navigation Bar -->
+    <div id="sideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <a class="navButton" href="index.html">Home</a>
+        <hr>
+        <a class="navButton" href="internship.html">Internship</a>
+        <hr>
+        <a class="navButton">Class 1</a>
+        <hr>
+        <a class="navButton">Class 2</a>
+        <hr>
+        <a class="navButton">Class 3</a>
+    </div>
+    <main class="Homepage">
         <container id="Intro" class="HomepageSection">
-                <container id="Intro-LC">
-                    <h2 id="name"><i>Massimo Viviano</i></h2>
-                    <h2 id="intent">Web Design/User Experience</h2>
-                    <container>
-                    <h2 id="welcome">Welcome to my site</h2>
+            <container id="Intro-LC">
+                <h2 id="name"><i>Massimo Viviano</i></h2>
+                <h2 id="intent">Web Design/User Experience</h2>
+                <container>
+                    <h2 id="welcome">Welcome!</h2>
                     <p>This is a website meant to showcase my work, and give you a sense of who I am, as well as my
-                         capabilities as a soon-to-be graduate entering the workforce. 
+                        capabilities as a soon-to-be graduate entering the workforce.
                     </p>
                     <br>
-                    <p>While I am not the most experienced, I have a strong passion for design, and love 
-                        creating functional and visually appealing assets.
+                    <p>While I am not the most experienced, I love learning, and have a strong passion for design and
+                        creating functional and visually appealing products.
                     </p>
                 </container>
-                </container>
-                <container id="Intro-RC">
-                    <img id = "profilePhoto" src="profileLG@0.25x.jpg" alt="Profile photo of Massimo Viviano">
-                </container>
+            </container>
+            <container id="Intro-RC">
+                <img id="profilePhoto" src="profile@0.25x.jpg" alt="Profile photo of Massimo Viviano">
+            </container>
         </container>
-        <container id = "About" class="HomepageSection" class="BioSection">
-            <h2 id="AboutH">About Me</h2>
-            <p id="AboutP">
-                Blurb about me
-            </p>
-        </container>
-        <container id= "Education" class="HomepageSection" class="BioSection">
-            <h2 id="EducationH">Education</h2>
-            <p id="EducationP">
-                Blurb about me
-            </p>
+
+        <container id="supplementary">
+            <container id="About" class="HomepageSection" class="BioSection">
+                <h2 class="LC" id="AboutH">About me
+                </h2>
+                <p class="RC" id="AboutP">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </container>
+
+
+            <container id="Education" class="HomepageSection" class="BioSection">
+                <h2 class="LC" id="EducationH">Education</h2>
+                <container class="RC">
+                    <p id="EducationP">
+                        <strong> CUNY Hunter College</strong> <i>Fall 21'-Fall 24'</i>
+                        </br><strong>Bachelors in Media studies, focus on Emerging Media</strong>.
+                        Coursework included Web Design, Digital design and development for an application,
+                        a 2D animation, and 3D modeling course. <strong> Minor in Computer Science</strong>.
+                    </p>
+                    </br>
+                    <p>
+                        <strong> Edward R. Murrow High School</strong> <i>Fall '18-Spring 21'</i>
+                        </br>National Honors Society Member 2018-2021, Tri-M Member 2018-2021,
+                        Tri-M chapter Secretary Fall 2020-Spring 2021. Music Major. Graduated with Honors.
+                    </p>
+                </container>
+            </container>
+
+            <container id="Education" class="HomepageSection" class="BioSection">
+                <h2 class="LC" id="EducationH">Additional Coursework</h2>
+                <container class="RC">
+                    <p id="EducationP">
+                        <strong> The New School-Parsons Continuing Professional Education</strong> <i>Spring '21</i>
+                        </br> <u>Storytelling with Motion Graphics and Animation Course.</u>
+                        </br>Art of Storytelling, Storyboarding, Animation using After Effects and homemade assets.
+                    </p>
+
+                    </br>
+
+                    <p>
+                        <strong> Fashion Institute of Technology</strong> <i>Summer '21</i>
+                        </br><u>Introduction to Graphic Design, Drawing in Adobe Illustrator Courses.</u>
+                        </br>Introduction to Graphic Design, basic color theory.
+                    </p>
+
+                    </br>
+                    <p>
+
+                        <strong> School of Visual Arts</strong> <i>Summer '18</i>
+                        </br><u>Intensive Motion Graphics Animation Workshop.</u>
+                        </br>First introduction to Animation.
+                    </p>
+                </container>
+            </container>
         </container>
     </main>
 </body>
+
 </html>
