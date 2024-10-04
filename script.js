@@ -27,3 +27,19 @@ const navUse = document.getElementsByClassName("navButton");
 navUse.addEventListener("click", () => {
     mainPage.style.visibility = "hidden";
 });
+
+const changePic = document.querySelector("ProjectIMG");
+const objectSelect = document.querySelector("Project");
+
+const step1 = document.querySelector("step1");
+const step2 = document.querySelector("step2");
+const step3 = document.querySelector("step3");
+
+step1.addEventListener("click", (event) => {
+        document.getElementsByClassName("ProjectIMG").src = url("crinkled_paper.jpg");
+});
+
+
+$("document").ready(function(){
+    $("#ProjectBreakdown").accordion();
+});

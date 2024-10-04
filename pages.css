@@ -34,19 +34,23 @@
     height: fit-content;
 }
 
-.Project1,
-.Project2,
-.Project3 {
-    height: 50%;
-    width: 45%;
+.Project {
+    height: fit-content;
+    width: 20%;
     border-radius: 1em;
     border: black solid 5px;
+    background-color: white;
 }
 
 #ProjectEnhanced {
     position: relative;
     align-self: center;
     width: 60vw;
-    height: 50vw;
-    background-color: white;
+    height: 80vh;
+}
+
+#ProjectEnhanced img{
+    width: 60vw;
+    height:auto;
+    border-radius: .5em;
 }
